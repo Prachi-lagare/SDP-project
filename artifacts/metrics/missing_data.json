@@ -1,0 +1,14 @@
+{
+  "masked_fraction": 0.15,
+  "feature_columns": [
+    "age",
+    "weight",
+    "current_inr",
+    "current_dose"
+  ],
+  "reconstruction_rmse": {
+    "Median": 9.95424,
+    "KNN": 8.57634
+  },
+  "note": "Different feature units mean pooled RMSE is descriptive, not a clinical metric. GenAI not implemented."
+}

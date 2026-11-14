@@ -1,0 +1,6 @@
+model,validation_mean,validation_std,train_mean,gap_validation_minus_train
+Persistence baseline,0.30791,0.16034,0.30791,0.0
+Random Forest,0.45709,0.0955,0.3088,0.14829
+Extra Trees,0.48655,0.09686,0.31385,0.1727
+HistGradientBoosting,0.5022,0.07148,0.3219,0.1803
+Ridge,0.52643,0.10468,0.41366,0.11277

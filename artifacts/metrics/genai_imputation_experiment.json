@@ -1,0 +1,16 @@
+{
+  "metric": "normalized masked-entry reconstruction RMSE (lower better)",
+  "validation_mask_fraction": 0.15,
+  "features": [
+    "age",
+    "weight",
+    "current_inr",
+    "current_dose"
+  ],
+  "scores": {
+    "Train-only median": 1.8515,
+    "Train-only KNN": 1.7098,
+    "From-scratch denoising autoencoder": 1.6934
+  },
+  "note": "Only 4 numeric columns. This does not evaluate clinical missing INR safety, downstream dose outcomes or external generalization."
+}

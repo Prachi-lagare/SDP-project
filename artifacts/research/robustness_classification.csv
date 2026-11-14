@@ -1,0 +1,3 @@
+model,validation_mean,validation_std,train_mean,gap_validation_minus_train
+Logistic Regression,0.37405,0.04962,0.49654,-0.12249
+Majority baseline,0.27782,0.03031,0.2795,-0.00168

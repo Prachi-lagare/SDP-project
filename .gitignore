@@ -1,0 +1,21 @@
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.vscode/
+
+# Private clinical data
+data/
+*.xlsx
+*.xls
+
+# Trained model artifacts
+artifacts/trained_models/
+
+# Logs and temporary files
+*.log

@@ -1,0 +1,254 @@
+{
+  "description": "Diagnostic 5-fold GroupKFold audit on development patients only; original 8 test patients never fitted or used for model selection.",
+  "development_patients": 44,
+  "heldout_test_patients_excluded": 8,
+  "development_pairs": 335,
+  "patient_overlap": false,
+  "fold_counts": [
+    {
+      "fold": 1,
+      "train_patients": 31,
+      "validation_patients": 6,
+      "train_pairs": 268,
+      "validation_pairs": 67
+    },
+    {
+      "fold": 2,
+      "train_patients": 29,
+      "validation_patients": 8,
+      "train_pairs": 268,
+      "validation_pairs": 67
+    },
+    {
+      "fold": 3,
+      "train_patients": 30,
+      "validation_patients": 7,
+      "train_pairs": 268,
+      "validation_pairs": 67
+    },
+    {
+      "fold": 4,
+      "train_patients": 29,
+      "validation_patients": 8,
+      "train_pairs": 268,
+      "validation_pairs": 67
+    },
+    {
+      "fold": 5,
+      "train_patients": 29,
+      "validation_patients": 8,
+      "train_pairs": 268,
+      "validation_pairs": 67
+    }
+  ],
+  "regression": {
+    "Persistence baseline": {
+      "validation_mean": 0.30791,
+      "validation_std": 0.16034,
+      "train_mean": 0.30791,
+      "gap_validation_minus_train": 0.0,
+      "folds": [
+        {
+          "train_mae": 0.28489,
+          "validation_mae": 0.4
+        },
+        {
+          "train_mae": 0.35078,
+          "validation_mae": 0.13642
+        },
+        {
+          "train_mae": 0.34231,
+          "validation_mae": 0.1703
+        },
+        {
+          "train_mae": 0.30728,
+          "validation_mae": 0.31045
+        },
+        {
+          "train_mae": 0.25429,
+          "validation_mae": 0.52239
+        }
+      ]
+    },
+    "Extra Trees": {
+      "validation_mean": 0.48655,
+      "validation_std": 0.09686,
+      "train_mean": 0.31385,
+      "gap_validation_minus_train": 0.1727,
+      "folds": [
+        {
+          "train_mae": 0.28316,
+          "validation_mae": 0.49626
+        },
+        {
+          "train_mae": 0.36853,
+          "validation_mae": 0.60298
+        },
+        {
+          "train_mae": 0.33113,
+          "validation_mae": 0.33356
+        },
+        {
+          "train_mae": 0.30548,
+          "validation_mae": 0.4926
+        },
+        {
+          "train_mae": 0.28094,
+          "validation_mae": 0.50733
+        }
+      ]
+    },
+    "Random Forest": {
+      "validation_mean": 0.45709,
+      "validation_std": 0.0955,
+      "train_mean": 0.3088,
+      "gap_validation_minus_train": 0.14829,
+      "folds": [
+        {
+          "train_mae": 0.28124,
+          "validation_mae": 0.50261
+        },
+        {
+          "train_mae": 0.35316,
+          "validation_mae": 0.37574
+        },
+        {
+          "train_mae": 0.33302,
+          "validation_mae": 0.35083
+        },
+        {
+          "train_mae": 0.30065,
+          "validation_mae": 0.47152
+        },
+        {
+          "train_mae": 0.27593,
+          "validation_mae": 0.58474
+        }
+      ]
+    },
+    "Ridge": {
+      "validation_mean": 0.52643,
+      "validation_std": 0.10468,
+      "train_mean": 0.41366,
+      "gap_validation_minus_train": 0.11277,
+      "folds": [
+        {
+          "train_mae": 0.38873,
+          "validation_mae": 0.51132
+        },
+        {
+          "train_mae": 0.45497,
+          "validation_mae": 0.67027
+        },
+        {
+          "train_mae": 0.44649,
+          "validation_mae": 0.38121
+        },
+        {
+          "train_mae": 0.3925,
+          "validation_mae": 0.50563
+        },
+        {
+          "train_mae": 0.38563,
+          "validation_mae": 0.56374
+        }
+      ]
+    },
+    "HistGradientBoosting": {
+      "validation_mean": 0.5022,
+      "validation_std": 0.07148,
+      "train_mean": 0.3219,
+      "gap_validation_minus_train": 0.1803,
+      "folds": [
+        {
+          "train_mae": 0.29475,
+          "validation_mae": 0.53903
+        },
+        {
+          "train_mae": 0.36427,
+          "validation_mae": 0.529
+        },
+        {
+          "train_mae": 0.35354,
+          "validation_mae": 0.38009
+        },
+        {
+          "train_mae": 0.30648,
+          "validation_mae": 0.50191
+        },
+        {
+          "train_mae": 0.29046,
+          "validation_mae": 0.56096
+        }
+      ]
+    }
+  },
+  "classification": {
+    "Majority baseline": {
+      "validation_mean": 0.27782,
+      "validation_std": 0.03031,
+      "train_mean": 0.2795,
+      "gap_validation_minus_train": -0.00168,
+      "folds": [
+        {
+          "train_macro_f1": 0.28161,
+          "validation_macro_f1": 0.27139,
+          "validation_accuracy": 0.68657
+        },
+        {
+          "train_macro_f1": 0.27399,
+          "validation_macro_f1": 0.30055,
+          "validation_accuracy": 0.8209
+        },
+        {
+          "train_macro_f1": 0.27313,
+          "validation_macro_f1": 0.30352,
+          "validation_accuracy": 0.83582
+        },
+        {
+          "train_macro_f1": 0.27826,
+          "validation_macro_f1": 0.2849,
+          "validation_accuracy": 0.74627
+        },
+        {
+          "train_macro_f1": 0.29053,
+          "validation_macro_f1": 0.22876,
+          "validation_accuracy": 0.52239
+        }
+      ]
+    },
+    "Logistic Regression": {
+      "validation_mean": 0.37405,
+      "validation_std": 0.04962,
+      "train_mean": 0.49654,
+      "gap_validation_minus_train": -0.12249,
+      "folds": [
+        {
+          "train_macro_f1": 0.53752,
+          "validation_macro_f1": 0.29421,
+          "validation_accuracy": 0.25373
+        },
+        {
+          "train_macro_f1": 0.48547,
+          "validation_macro_f1": 0.35684,
+          "validation_accuracy": 0.38806
+        },
+        {
+          "train_macro_f1": 0.496,
+          "validation_macro_f1": 0.40884,
+          "validation_accuracy": 0.50746
+        },
+        {
+          "train_macro_f1": 0.51875,
+          "validation_macro_f1": 0.40155,
+          "validation_accuracy": 0.44776
+        },
+        {
+          "train_macro_f1": 0.44497,
+          "validation_macro_f1": 0.40883,
+          "validation_accuracy": 0.49254
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "PyTorch MLP, random initialization, 16-8 hidden units",
+  "epoch": 91,
+  "metrics": {
+    "train": {
+      "mae": 0.51844,
+      "rmse": 0.68729,
+      "r2": 0.72841
+    },
+    "validation": {
+      "mae": 0.72624,
+      "rmse": 1.22458,
+      "r2": 0.15398
+    },
+    "test": {
+      "mae": 0.43197,
+      "rmse": 0.60676,
+      "r2": 0.71895
+    }
+  },
+  "selected_for_website": false,
+  "notes": "Exploratory; test evaluation only after validation stopping. Compare against models selected without viewing test scores."
+}

@@ -1,0 +1,33 @@
+{
+  "model": "GRU from scratch, 3-visit window",
+  "epochs": 250,
+  "patient_counts": {
+    "train": 36,
+    "validation": 8,
+    "test": 8
+  },
+  "sequence_counts": {
+    "train": 288,
+    "validation": 47,
+    "test": 28
+  },
+  "metrics": {
+    "train": {
+      "mae": 0.39563,
+      "rmse": 0.57399,
+      "r2": 0.81058
+    },
+    "validation": {
+      "mae": 0.72471,
+      "rmse": 0.96632,
+      "r2": 0.47319
+    },
+    "test": {
+      "mae": 0.44867,
+      "rmse": 0.69318,
+      "r2": 0.6332
+    }
+  },
+  "selected_for_website": false,
+  "note": "Exploratory temporal experiment; short independent patient histories limit reliability."
+}
